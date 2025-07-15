@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Github, Mail, Linkedin, Twitter, ExternalLink, Star, GitFork, Code, Database, Globe, Smartphone, ChevronDown, Play, Zap, Brain, Rocket, Shield, Users, TrendingUp, Award, ArrowRight, Menu, X, MousePointer, Sparkles, Eye, Heart, Download, Send } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Github, Mail, Linkedin, Twitter, ExternalLink, Star, GitFork, Code, Database, Globe, Smartphone, ChevronDown, Play, Zap, Brain, Rocket, Shield, Users, TrendingUp, Award, ArrowRight, Menu, X, Sparkles } from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,8 +38,7 @@ function App() {
       forks: 89,
       link: "https://intercom-bay.vercel.app/",
       status: "Live",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-      gradient: "from-emerald-500 to-teal-600"
+      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       name: "Neural Network Suite",
@@ -49,8 +48,7 @@ function App() {
       forks: 412,
       link: "https://github.com/epictechai",
       status: "Active",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
-      gradient: "from-blue-500 to-purple-600"
+      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
       name: "Quantum Computing Lab",
@@ -60,36 +58,34 @@ function App() {
       forks: 156,
       link: "https://github.com/epictechai",
       status: "Research",
-      image: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=800",
-      gradient: "from-purple-500 to-pink-600"
+      image: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=800"
     }
   ];
 
   const achievements = [
-    { icon: Award, number: "50+", label: "AI Projects Delivered", color: "from-yellow-400 to-orange-500" },
-    { icon: Users, number: "10K+", label: "Developers Reached", color: "from-blue-400 to-cyan-500" },
-    { icon: TrendingUp, number: "99.9%", label: "Uptime Achieved", color: "from-green-400 to-emerald-500" },
-    { icon: Rocket, number: "5M+", label: "API Calls Processed", color: "from-purple-400 to-pink-500" }
+    { icon: Award, number: "50+", label: "AI Projects Delivered" },
+    { icon: Users, number: "10K+", label: "Developers Reached" },
+    { icon: TrendingUp, number: "99.9%", label: "Uptime Achieved" },
+    { icon: Rocket, number: "5M+", label: "API Calls Processed" }
   ];
 
   const skills = [
-    { name: "Artificial Intelligence", icon: Brain, level: 98, color: "from-purple-500 to-pink-500" },
-    { name: "Machine Learning", icon: Database, level: 95, color: "from-blue-500 to-cyan-500" },
-    { name: "Neural Networks", icon: Zap, level: 92, color: "from-green-500 to-emerald-500" },
-    { name: "React & Next.js", icon: Code, level: 90, color: "from-orange-500 to-red-500" },
-    { name: "Python & AI Frameworks", icon: Code, level: 94, color: "from-indigo-500 to-purple-500" },
-    { name: "Cloud Architecture", icon: Globe, level: 88, color: "from-teal-500 to-blue-500" },
-    { name: "Quantum Computing", icon: Smartphone, level: 85, color: "from-pink-500 to-rose-500" },
-    { name: "Innovation Strategy", icon: Rocket, level: 96, color: "from-yellow-500 to-orange-500" }
+    { name: "Artificial Intelligence", icon: Brain, level: 98 },
+    { name: "Machine Learning", icon: Database, level: 95 },
+    { name: "Neural Networks", icon: Zap, level: 92 },
+    { name: "React & Next.js", icon: Code, level: 90 },
+    { name: "Python & AI Frameworks", icon: Code, level: 94 },
+    { name: "Cloud Architecture", icon: Globe, level: 88 },
+    { name: "Quantum Computing", icon: Smartphone, level: 85 },
+    { name: "Innovation Strategy", icon: Rocket, level: 96 }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white relative">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-40 left-40 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
       {/* Navigation */}
@@ -158,7 +154,7 @@ function App() {
             {/* Avatar */}
             <div className="relative mb-8 inline-block">
               <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
-                <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center">
+                <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
                   <Brain className="w-16 h-16 text-white" />
                 </div>
               </div>
@@ -226,7 +222,7 @@ function App() {
                   key={index}
                   className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
                 >
-                  <div className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${achievement.color} flex items-center justify-center`}>
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
                     <Icon className="w-8 h-8 text-white" />
                   </div>
                   <div className="text-3xl font-bold text-white mb-2">{achievement.number}</div>
@@ -264,7 +260,7 @@ function App() {
                     alt={project.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${project.gradient} opacity-60`}></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute top-4 right-4">
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
                       project.status === 'Live' ? 'bg-green-500/20 text-green-300 border border-green-500/30' :
@@ -278,7 +274,7 @@ function App() {
 
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-white mb-3">{project.name}</h3>
-                  <p className="text-gray-300 mb-4 line-clamp-3">{project.description}</p>
+                  <p className="text-gray-300 mb-4">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech, techIndex) => (
@@ -342,7 +338,7 @@ function App() {
                   className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
                 >
                   <div className="flex items-center mb-4">
-                    <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${skill.color} flex items-center justify-center mr-4`}>
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center mr-4">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -352,7 +348,7 @@ function App() {
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-3">
                     <div
-                      className={`h-3 rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
+                      className="h-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 transition-all duration-1000 ease-out"
                       style={{ width: `${skill.level}%` }}
                     ></div>
                   </div>
